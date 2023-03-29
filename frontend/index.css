@@ -19,9 +19,9 @@ ul > li > a{
 
 .card {
     position: absolute;
-    /* margin: auto; */
-    left: 32.5%;
-    top: 22.5%;
+    width: 44%;
+    left: 28%;
+    top: 19.5%;
     background-color: #c70426;
     box-shadow: none;
     /* border: 2px solid red; */
@@ -33,20 +33,92 @@ ul > li > a{
     width: 100%;
 }
 .card-title{
-    padding: 6px 20px;
+    padding: .5vw;
     background-color: #fff;
-    width: 12rem;
+    width: 11vw;
     margin: auto;
+    font-size: 1vw;
 }
 .btn{
     font-weight:500;
+    font-size: 1.5vw;
 }
 
 .secret-sale{
-    font-size: 80px;
+    font-size: 5vw;
     font-weight: 400;
 }
 .online-sale{
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 400;
+}
+.first-poster{
+    width: 100%;
+}
+
+.age-shop{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.shop-by-age{
+    font-size: 60px;
+    color: rgb(74, 156, 243);
+}
+
+.category{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+    margin: 20px 0;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.category-img > img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.category-name{
+    color: black;
+    text-decoration: none;
+    /* border: 2px solid; */
+}
+.category-name:hover{
+   margin-bottom: 2px;
+   border-bottom:2px solid black ;
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.center{
+    text-align: center;
+}
+.tn {
+    font-size: 25px;
+}
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    padding: 15px;
+}
+.trending > div{
+    /* border: 2px solid; */
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.trending > div > img{
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+hr{
+    text-decoration: dashed;
 }
