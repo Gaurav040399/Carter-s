@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 #logo{
@@ -121,4 +123,108 @@ ul > li > a{
 
 hr{
     text-decoration: dashed;
+}
+
+.shop_share > h1{
+    color: rgb(74, 156, 243)
+}
+.shop_share > button{
+    background-color: rgb(74, 156, 243);
+    color: #ffff;
+    padding: 7px 30px;
+    border: none;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+.img >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+}
+.img > div > i{
+    position: absolute;
+    font-size: 60px;
+    color: black;   
+}
+
+.img > div:hover{
+    display: flex;
+}
+.img >div>img:hover{
+    opacity: .3;
+    display:block;
+}
+.img > div > img{
+    width: 100%;
+}
+.img > image{
+    width: 100%;
+}
+
+.f-main{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    background-color: rgb(240, 249, 249);
+}
+.left-div{
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+}
+
+.right-div{
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: 25%, 75%;
+}
+/* footer section  */
+
+#footer{
+    padding: 10px 20px;
+    background-color: rgb(240, 249, 249);
+}
+
+.support,.about-us{
+    /* border: 1px solid; */
+    padding: 20px;
+}
+.support h6,.about-us h6{
+    font-weight: 600;
+}
+.support a,.about-us a{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.support a:hover,.about-us a:hover{
+    border-bottom-style: solid;
+    padding: 3px;
+    margin-left: 5px;
+    width: fit-content;
+}
+.bottom{
+    display: block;
+    /* border: 2px solid; */
+    text-align: end;
+}
+
+.text p{
+    font-size: 12px;
+}
+.bottom p{
+    font-size: 12px;
+    line-height:0;
+    padding-top: 10px;
 }
