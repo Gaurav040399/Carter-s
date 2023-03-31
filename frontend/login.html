@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(./cwproject-cinders/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .heading>a {
+            font-size: 35px;
+            color: springgreen;
+            margin-bottom: 35px;
+            text-decoration: none;
+            padding-bottom: 8px;
+            border-bottom: 2px dashed darkturquoise;
+        }
+
+        .container {
+            width: 40%;
+            justify-content: center;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form>div {
+            margin-bottom: 15px;
+        }
+
+        form>div>input {
+            font-size: 20px;
+            padding: 5px 0px 5px 10px;
+            border-radius: 6px;
+        }
+
+        form>div>input:hover {
+            background-color: #484747;
+            color: white;
+            border: 1px dashed red;
+        }
+
+        form>div>input::placeholder {
+            font-size: 15px;
+        }
+
+        form>div>label {
+            font-size: 20px;
+            color: aquamarine;
+        }
+
+        input[type="submit"] {
+            background-color: cadetblue;
+            width: 63%;
+            font-size: 23px;
+            margin: auto;
+            border-radius: 6px;
+            padding: 10px 0px;
+            font-weight: bold;
+            margin-top: 16px;
+            margin-left: 125px;
+        }
+
+        input[type="submit"]:hover {
+            /* background-color: rgb(75, 40, 73); */
+            background: linear-gradient(to left, rgb(113, 102, 102), rgb(48, 48, 66));
+            font-size: 25px;
+            color: springgreen;
+            transition: background .5s, font-size 0.5s, transform .5s, color 0.3s;
+        }
+
+        .username {
+            margin-left: 5px;
+        }
+
+        .password {
+            margin-left: 10px;
+        }
+
+        .main {
+            display: flex;
+            width: 70%;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 50px;
+            align-items: center;
+            justify-content: center;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 130px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 130px;
+            background-color: #484747;
+            /* background-color: transparent; */
+        }
+
+        .logo {
+            /* background-color: #fff; */
+            color: white;
+            width: 40%
+        }
+
+        .logo>img {
+            width: 100%;
+            background-color: #484747;
+            color: white;
+            border-radius: 50%;
+
+        }
+
+        .sec {
+            color: white;
+        }
+
+        .search-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            background-color: black;
+            color: white;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .icon>i {
+            margin: 8px;
+            font-size: 20px;
+            padding-bottom: 6px;
+        }
+
+        .icon>i:hover {
+            color: maroon;
+            border-bottom: 5px solid white;
+        }
+
+        .section>a {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+            font-size: 17px;
+        }
+
+        @media screen and (max-width:1150px) {
+            .section {
+                display: none;
+            }
+
+        }
+
+        .container>p {
+            margin-top: 20px;
+            font-size: 15px;
+            color: whitesmoke;
+        }
+
+        .container>p>a {
+            margin-left: 7px;
+            text-decoration: none;
+            color: goldenrod;
+        }
+
+        .container>p>a:hover {
+            color: rgb(180, 144, 54);
+        }
+
+        .head {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8p57nXc0ezonjXWqIYSs_lReUR0fEI7lYC-kJR4qZA&s"
+                alt="" />
+        </div>
+        <div class="container">
+            <div class="heading">
+                <!-- <a href="./signUp.html">Sign Up</a> -->
+                <a href="./login.html">Log In</a>
+            </div>
+            <form>
+                <div class="username">
+                    <label for="Username ">Username :</label>
+                    <input placeholder="Enter Your username" type="text" id="username" required />
+                </div>
+                <div class="password">
+                    <label for="Password ">Password :</label>
+                    <input placeholder="Enter Your Password" type="password" id="password" required />
+                </div>
+                <input type="submit" value="Log in" />
+            </form>
+            <p>Don't have an Account? <a href="./signUp.html">Sign Up Here</a></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
