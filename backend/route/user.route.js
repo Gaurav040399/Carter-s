@@ -25,6 +25,7 @@ userRoute.post("/register",async(req,res)=>{
         }
     })
 
+
 userRoute.post("/login",async(req,res)=>{
     const {email,password} = req.body
      try {
