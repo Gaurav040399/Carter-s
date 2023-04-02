@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <style>
          *{
             margin: 0;
@@ -59,7 +59,7 @@
         }
         .heading > a{
             font-size: 35px;
-            color: springgreen;
+            color: rgb(39, 44, 41);
             margin-bottom: 35px;
             text-decoration: none;
             padding-bottom: 8px;
@@ -92,7 +92,7 @@
         }
         form > div > label{
             font-size: 20px;
-            color: aquamarine;
+            color: rgb(9, 10, 10);
         }
         input[type="submit"]{
             background-color: cadetblue;
@@ -109,7 +109,7 @@
             /* background-color: rgb(75, 40, 73); */
             background: linear-gradient(to left, rgb(113, 102, 102),  rgb(48, 48, 66));
             font-size: 25px;
-            color: springgreen;
+            color: rgb(12, 168, 90);
             transition: background .5s,font-size 0.5s, transform .5s ,color 0.3s ;
         }
         #email{
@@ -139,7 +139,7 @@
             border-top-left-radius: 130px ;
             border-bottom-left-radius:20px;
             border-bottom-right-radius: 130px;
-            background-color: #484747;
+            background-color: #d4cdcd;
         }
         .logo{
             /* background-color: #fff; */
@@ -160,7 +160,7 @@
 <body>
     <div class="main">
         <div class="logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8p57nXc0ezonjXWqIYSs_lReUR0fEI7lYC-kJR4qZA&s" alt="">
+            <img src="./cwproject-cinders//CHUNNU MUNNU.png" alt="">
         </div>
         <div class="container">
             <div class="heading">
@@ -168,26 +168,28 @@
              <a href="./login.html">Log in</a>
             </div>
              <form >
-                <div class="last-name">
-                 <label  for="Last Name ">Full Name :</label>
-                 <input placeholder="Enter Your Full Name" type="text" id="Last_name" required>
+                <div class="username">
+                    <label for="Username ">Username :</label>
+                <input placeholder="Enter Your username" type="text" id="username" required>
                 </div>
                 <div class="email">
                  <label for="Email" id="email">Email :</label>
-                 <input placeholder="Enter Your Email" type="email" id="mail" required="fill this">
+                 <input placeholder="Enter Your Email" type="email" id="mail" required>
                 </div>
-                 <div class="username">
-                     <label for="Username ">Username :</label>
-                 <input placeholder="Enter Your username" type="text" id="username" required>
-                 </div>
+                
                  <div class="password">
                      <label for="Password ">Password :</label>
                    <input placeholder="Enter Your Password" type="password" id="password" required>
                  </div>
+                 <div class="last-name">
+                    <label  for="Last Name ">Location :</label>
+                    <input placeholder="Enter Your Location" type="text" id="Last_name" required>
+                   </div>
                  <input type="submit" value="Sign Up">
              </form>
             
      </div>
        </div>
 </body>
+<script src="signup.js"></script>
 </html>

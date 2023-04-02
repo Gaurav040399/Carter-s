@@ -1,12 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .nav{
     display: flex;
   }
   
-  .logo{
-    width:200px;
-    /* border: 2px solid red; */
-    height:150px
-  }
+  #logo{
+    border-radius: 50%;
+    width: 5%;
+    margin-right: 10PX;
+    border: 2px solid red;
+}
+nav{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+ul > li > a{
+  margin-right: 60px;
+}
   .bag{
     /* border:2px solid red; */
     height:150px
@@ -451,3 +467,40 @@ font-size: 20px;
   width: fit-content;
 }
   
+
+
+/* nav cart and wishllist icon  */
+.search{
+  background-color: #fff;
+}
+.search-icon{
+  display: flex;
+  align-items: center;
+}
+.search > input{
+  font-size: 10px;
+  padding: 5px 10px;
+  /* border-radius: 16px; */
+  border: none;
+ 
+}
+
+
+.icon{
+  /* background-color:black; */
+  color: black;
+  margin-left: 10px;
+  /* border: 2px solid; */
+}
+.icon >a> i{
+  margin: 5px;
+  font-size: 17px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  /* color: whitesmoke; */
+  color: black;
+}
+.icon >a> i:hover{
+  color:maroon;
+  border-bottom: 5px solid white;
+}

@@ -118,3 +118,7 @@ let AllProducts = JSON.parse(localStorage.getItem('allProducts')) ||[]
       location.href="checkout.html"
     })
 
+    let logo = document.getElementById("logo")
+    logo.addEventListener("click",()=>{
+      window.location.href="./index.html"
+     })

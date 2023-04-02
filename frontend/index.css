@@ -164,8 +164,8 @@ hr{
     display: flex;
 }
 .img >div>img:hover{
-    opacity: .3;
-    display:block;
+   transform: scale(1.05);
+   transition: .5s ease;
 }
 .img > div > img{
     width: 100%;
@@ -357,4 +357,41 @@ font-size: 20px;
 .nav-link:hover{
     border-bottom: 2px solid;
     width: fit-content;
+}
+
+
+/* nav cart and wishllist icon  */
+.search{
+    background-color: #fff;
+}
+.search-icon{
+    display: flex;
+    align-items: center;
+}
+.search > input{
+    font-size: 10px;
+    padding: 5px 10px;
+    /* border-radius: 16px; */
+    border: none;
+   
+}
+
+
+.icon{
+    /* background-color:black; */
+    color: black;
+    margin-left: 10px;
+    /* border: 2px solid; */
+}
+.icon >a> i{
+    margin: 5px;
+    font-size: 17px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    /* color: whitesmoke; */
+    color: black;
+}
+.icon >a> i:hover{
+    color:maroon;
+    border-bottom: 5px solid white;
 }
