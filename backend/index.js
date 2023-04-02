@@ -9,7 +9,9 @@ const app = express();
 app.use(express.json())
 app.use(cors())
 
-
+app.get("/",(req,res)=>{
+    res.send("Home Page")
+})
 app.use("/users",userRoute)
 
 
@@ -18,7 +20,8 @@ app.listen(process.env.PORT,async()=>{
 
     try {
         await connection
-        console.log("Connected to DB")        
+        console.log("Connected to DB")  
+        console.log("http://localhost:8000")      
     } catch (error) {
         console.log("connot connect to DB")
     }

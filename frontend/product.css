@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #ffffff;
+} */
+#logo{
+    border-radius: 50%;
+    width: 5%;
+    margin-right: 10PX;
+    border: 2px solid red;
+}
+nav{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+ul > li > a{
+    margin-right: 60px;
 }
 body{
     margin: auto;
@@ -29,6 +50,9 @@ body{
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.left> div > h2{
+    font-size: 25px;
+}
 .checkbox > div > input{
    border: 2px solid yellow;
    margin-left: 50px;
@@ -39,6 +63,9 @@ body{
 
 .main-head > a{
     text-decoration: none;
+}
+.main-head h3{
+    font-size: 20px;
 }
 .inner-head{
     margin-bottom: 10px;
@@ -93,7 +120,7 @@ body{
 .right{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 15px;
+    gap: 12px;
     /* border: 2px solid red; */
 }
 .right > div{
@@ -101,20 +128,24 @@ body{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 9px;
     width: 100%;
-    padding-bottom: 20px;
-    
+    /* padding-bottom: 20px; */
+    padding: 0 3px 20px 3px;
 }
 .right > div > img{
     width: 100%;
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
+    padding-bottom: 10px;
 }
 .right > div >p{
     margin-bottom: 5px;
 }
+.right > div >h4{
+    font-size: 18px;
+}
 .right >div >div > button{
-    padding: 5px 8px;
-    margin-right: 5px;
+    padding: 4px 6px;
+    margin-right: 4px;
     margin-top: 10px;
     border-radius: 6px;
     background-color: rgb(243, 233, 234);
@@ -422,3 +453,39 @@ header{
   }
 
 
+
+/* nav cart and wishllist icon  */
+.search{
+    background-color: #fff;
+}
+.search-icon{
+    display: flex;
+    align-items: center;
+}
+.search > input{
+    font-size: 10px;
+    padding: 5px 10px;
+    /* border-radius: 16px; */
+    border: none;
+   
+}
+
+
+.icon{
+    /* background-color:black; */
+    color: black;
+    margin-left: 10px;
+    /* border: 2px solid; */
+}
+.icon >a> i{
+    margin: 5px;
+    font-size: 17px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    /* color: whitesmoke; */
+    color: black;
+}
+.icon >a> i:hover{
+    color:maroon;
+    border-bottom: 5px solid white;
+}
